@@ -3,17 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            height: 80%;
+        }
+        .tile {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .tile:hover {
+            transform: scale(1.1);
+        }
+        .blog {
+            background: url('path/to/blog-background.jpg') no-repeat center center / cover;
+        }
+        .book-club {
+            background: url('path/to/book-club-background.jpg') no-repeat center center / cover;
+        }
+        .finance {
+            background: url('path/to/finance-background.jpg') no-repeat center center / cover;
+        }
+        .honduras {
+            background: url('path/to/honduras-background.jpg') no-repeat center center / cover;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="tile" id="blog" onclick="goToSection('blog')">Blogging</div>
-        <div class="tile" id="book" onclick="goToSection('book')">Book Club</div>
-        <div class="tile" id="finance" onclick="goToSection('finance')">Investment & Finance</div>
-        <div class="tile" id="honduras" onclick="goToSection('honduras')">Honduras Growth</div>
+        <div class="tile blog" onclick="location.href='#blog'">Blog</div>
+        <div class="tile book-club" onclick="location.href='#book-club'">Book Club</div>
+        <div class="tile finance" onclick="location.href='#finance'">Investment and Finance</div>
+        <div class="tile honduras" onclick="location.href='#honduras'">Honduras Growth Potential</div>
     </div>
-    
-    <script src="js/script.js"></script>
 </body>
 </html>
