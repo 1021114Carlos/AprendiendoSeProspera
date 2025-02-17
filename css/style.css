@@ -34,14 +34,14 @@ body {
     transform: scale(1.1);
 }
 .blog {
-    background: url('path/to/blog-background.jpg') no-repeat center center / cover;
+    background: url('../images/blog-background.jpg') no-repeat center center / cover;
 }
 .book-club {
-    background: url('path/to/book-club-background.jpg') no-repeat center center / cover;
+    background: url('../images/book-club-background.jpg') no-repeat center center / cover;
 }
 .finance {
-    background: url('path/to/finance-background.jpg') no-repeat center center / cover;
+    background: url('../images/finance-background.jpg') no-repeat center center / cover;
 }
 .honduras {
-    background: url('path/to/honduras-background.jpg') no-repeat center center / cover;
+    background: url('../images/honduras-background.jpg') no-repeat center center / cover;
 }
