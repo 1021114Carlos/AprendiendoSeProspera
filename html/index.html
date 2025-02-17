@@ -4,24 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="tile" id="blog-tile">
-            <a href="#blog-section">Blog</a>
-        </div>
-        <div class="tile" id="bookclub-tile">
-            <a href="#bookclub-section">Book Club</a>
-        </div>
-        <div class="tile" id="finance-tile">
-            <a href="#finance-section">Investment & Finance</a>
-        </div>
-        <div class="tile" id="honduras-tile">
-            <a href="#honduras-section">Honduras Growth Potential</a>
-        </div>
+        <div class="tile" id="blog" onclick="goToSection('blog')">Blogging</div>
+        <div class="tile" id="book" onclick="goToSection('book')">Book Club</div>
+        <div class="tile" id="finance" onclick="goToSection('finance')">Investment & Finance</div>
+        <div class="tile" id="honduras" onclick="goToSection('honduras')">Honduras Growth</div>
     </div>
-
-    <script src="script.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
