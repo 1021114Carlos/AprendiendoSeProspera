@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="tile blog" onclick="location.href='#blog'">Blog</div>
-        <div class="tile book-club" onclick="location.href='#book-club'">Book Club</div>
-        <div class="tile finance" onclick="location.href='#finance'">Investment and Finance</div>
-        <div class="tile honduras" onclick="location.href='#honduras'">Honduras Growth Potential</div>
+  <header>
+    <h1>Your Website Name</h1>
+    <nav>
+      <ul>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#reading-club">Reading Club</a></li>
+        <li><a href="#finances">Finances/Inversiones</a></li>
+        <li><a href="#honduras-growth">Honduras Potential Growth</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="grid-container">
+      <div class="grid-item" id="blog">
+        <h2>Blog</h2>
+        <p>Content for the Blog section.</p>
+      </div>
+      <div class="grid-item" id="reading-club">
+        <h2>Club de lectura/Reading club</h2>
+        <p>Content for the Reading Club section.</p>
+      </div>
+      <div class="grid-item" id="finances">
+        <h2>Finances/Inversiones</h2>
+        <p>Content for the Finances/Inversiones section.</p>
+      </div>
+      <div class="grid-item" id="honduras-growth">
+        <h2>Honduras Potential Growth</h2>
+        <p>Content for the Honduras Potential Growth section.</p>
+      </div>
     </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>
