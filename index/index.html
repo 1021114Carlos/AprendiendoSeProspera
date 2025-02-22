@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website Title</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            background-color: #d3eafc;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #c2d8f0;
+            padding: 20px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 60%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Your Website Name</h1>
-    <nav>
-      <ul>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#reading-club">Reading Club</a></li>
-        <li><a href="#finances">Finances/Inversiones</a></li>
-        <li><a href="#honduras-growth">Honduras Potential Growth</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="grid-container">
-      <div class="grid-item" id="blog">
-        <h2>Blog</h2>
-        <p>Content for the Blog section.</p>
-      </div>
-      <div class="grid-item" id="reading-club">
-        <h2>Club de lectura/Reading club</h2>
-        <p>Content for the Reading Club section.</p>
-      </div>
-      <div class="grid-item" id="finances">
-        <h2>Finances/Inversiones</h2>
-        <p>Content for the Finances/Inversiones section.</p>
-      </div>
-      <div class="grid-item" id="honduras-growth">
-        <h2>Honduras Potential Growth</h2>
-        <p>Content for the Honduras Potential Growth section.</p>
-      </div>
+    <div class="container">
+        <div class="box">Blog</div>
+        <div class="box">Club de lectura/Reading club</div>
+        <div class="box">Financell nversiones</div>
+        <div class="box">Honduras Potential growth</div>
     </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Your Website Name. All rights reserved.</p>
-  </footer>
 </body>
 </html>
