@@ -127,6 +127,13 @@ footer a:hover {
     color: #fff;
 }
 
+footer .social-icon {
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .container {
