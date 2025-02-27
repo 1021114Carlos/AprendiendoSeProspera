@@ -71,10 +71,13 @@ nav a.home-button:hover {
 
 .tile#honduras a {
     font-size: 30px; /* Smaller size for Honduras tile */
+    padding: 0 25px; /* Add padding to create space */
 }
 
 .tile#book-club a {
     white-space: nowrap; /* Ensure single line */
+    font-size: 30px; /* Adjusted font size for single line */
+    padding: 0 25px; /* Add padding to create space */
 }
 
 .tile#finance a {
