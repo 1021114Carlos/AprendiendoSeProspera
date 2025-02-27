@@ -4,20 +4,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-wrap: wrap;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .tile {
     width: 200px;
     height: 200px;
-    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid #ccc;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease-in-out;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .tile a {
@@ -28,6 +33,8 @@ body {
 
 .tile:hover {
     background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .tile:hover a {
