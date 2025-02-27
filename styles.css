@@ -33,7 +33,7 @@ nav a.home-button {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
-    margin-right: 20px;
+    margin-right: calc(20px + 25px); /* 20px padding + 25px adjustment */
 }
 
 nav a.home-button:hover {
@@ -66,7 +66,7 @@ nav a.home-button:hover {
 .tile a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 36px; /* Double the original size */
 }
 
 .tile:hover {
