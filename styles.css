@@ -1,33 +1,31 @@
 body {
     background-color: #e0f7fa;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
 }
 
 header {
     background-color: #009688;
     color: #fff;
     width: 100%;
-    padding: 10px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
+.title h1 {
     margin: 0;
     font-size: 24px;
 }
 
-header nav {
-    margin-top: 10px;
-}
-
-header nav a {
+nav a.home-button {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -37,7 +35,7 @@ header nav a {
     transition: background-color 0.3s;
 }
 
-header nav a:hover {
+nav a.home-button:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
