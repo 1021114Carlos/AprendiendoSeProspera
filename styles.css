@@ -69,6 +69,18 @@ nav a.home-button:hover {
     font-size: 36px; /* Double the original size */
 }
 
+.tile#honduras a {
+    font-size: 30px; /* Smaller size for Honduras tile */
+}
+
+.tile#book-club a {
+    white-space: nowrap; /* Ensure single line */
+}
+
+.tile#finance a {
+    white-space: nowrap; /* Ensure single line */
+}
+
 .tile:hover {
     background-color: rgba(0, 0, 0, 0.6);
     transform: translateY(-10px);
