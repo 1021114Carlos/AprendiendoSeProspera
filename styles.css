@@ -33,7 +33,7 @@ nav a.home-button {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
-    margin-right: 40px; /* Adjusted margin to move it left by an inch */
+    margin-right: 40px; /* Adjusted margin to move it left */
 }
 
 nav a.home-button:hover {
@@ -69,6 +69,39 @@ nav a.home-button:hover {
     width: 24px; /* Reduced size */
     height: 24px; /* Reduced size */
     margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .tile {
+        height: 150px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav a.home-button {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .mit-link {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    .mit-link a {
+        align-items: center;
+    }
 }
 
 /* Rest of your CSS... */
@@ -174,24 +207,4 @@ footer .social-icon {
     border: none;
     padding: 0;
     object-fit: contain;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-
-    .tile {
-        height: 150px;
-    }
-
-    header {
-        flex-direction: column;
-    }
-
-    nav a.home-button {
-        margin-right: 0;
-        margin-top: 10px;
-    }
 }
