@@ -94,7 +94,7 @@ nav a.home-button:hover {
     color: #fff;
 }
 
-.club-message {
+.content, .club-message {
     margin-top: 100px;
     width: 80%;
     max-width: 800px;
@@ -103,54 +103,4 @@ nav a.home-button:hover {
     border: 2px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
-
-footer {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #009688;
-    background-color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #009688;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-footer a:hover {
-    background-color: #009688;
-    color: #fff;
-}
-
-footer .social-icon {
-    width: 30px;
-    height: 30px;
-    border: none;
-    padding: 0;
-    object-fit: contain;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-
-    .tile {
-        height: 150px;
-    }
-
-    header {
-        flex-direction: column;
-    }
-
-    nav a.home-button {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-}
+    display: flex
