@@ -18,6 +18,7 @@ header {
     top: 0;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures the header stays on top */
 }
 
 .title h1 {
@@ -70,41 +71,6 @@ nav a.home-button:hover {
     height: 24px; /* Reduced size */
     margin-bottom: 5px;
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-
-    .tile {
-        height: 150px;
-    }
-
-    header {
-        flex-direction: column;
-    }
-
-    nav a.home-button {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-
-    .mit-link {
-        position: relative;
-        top: 0;
-        right: 0;
-        text-align: center;
-        padding: 10px 0;
-        margin-top: 10px;
-    }
-
-    .mit-link a {
-        align-items: center;
-    }
-}
-
-/* Rest of your CSS... */
 
 .container {
     display: grid;
@@ -207,4 +173,56 @@ footer .social-icon {
     border: none;
     padding: 0;
     object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a.home-button {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .mit-link {
+        position: relative;
+        top: auto;
+        right: auto;
+        text-align: center;
+        margin: 10px auto;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .mit-link a {
+        color: #009688;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #009688;
+        border-radius: 5px;
+    }
+
+    .mit-link a:hover {
+        background-color: #009688;
+        color: #fff;
+    }
+
+    .mit-icon {
+        width: 30px; /* Adjusted size */
+        height: 30px; /* Adjusted size */
+        margin-bottom: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin-top: 150px; /* Adjusted for the fixed header and MIT link */
+    }
+
+    .tile {
+        height: 150px;
+    }
 }
