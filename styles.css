@@ -33,7 +33,7 @@ nav a.home-button {
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
-    margin-right: 25px; /* Ensure button is within the screen */
+    margin-right: 15px; /* Adjusted margin to move it left */
 }
 
 nav a.home-button:hover {
@@ -43,13 +43,14 @@ nav a.home-button:hover {
 .mit-link {
     position: absolute;
     top: 100px; /* Adjusted to place below the header */
-    right: 10px;
+    right: 30px; /* Adjusted margin to move it left */
     text-align: right;
     color: #fff;
     background-color: rgba(0, 150, 136, 0.9); /* Adjust background color if needed */
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px; /* Reduced font size */
 }
 
 .mit-link a {
@@ -65,8 +66,8 @@ nav a.home-button:hover {
 }
 
 .mit-icon {
-    width: 30px;
-    height: 30px;
+    width: 24px; /* Reduced size */
+    height: 24px; /* Reduced size */
     margin-bottom: 5px;
 }
 
