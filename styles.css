@@ -42,9 +42,9 @@ nav a.home-button:hover {
 }
 
 .mit-link {
-    position: absolute;
-    top: 100px; /* Adjusted to place below the header */
-    right: 30px; /* Adjusted margin to move it left */
+    position: relative;
+    top: 130px; /* Adjusted to place below the header */
+    right: 0;
     text-align: right;
     color: #fff;
     background-color: rgba(0, 150, 136, 0.9); /* Adjust background color if needed */
@@ -52,6 +52,8 @@ nav a.home-button:hover {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 14px; /* Reduced font size */
+    width: 300px; /* Adjust width if needed */
+    margin: 0 auto; /* Center it horizontally */
 }
 
 .mit-link a {
@@ -76,7 +78,7 @@ nav a.home-button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    margin-top: 130px; /* Adjusted for the fixed header and MIT link */
+    margin-top: 160px; /* Adjusted for the fixed header and MIT link */
     width: 100%;
     max-width: 800px;
     padding: 0 20px;
@@ -188,27 +190,14 @@ footer .social-icon {
     }
 
     .mit-link {
-        position: relative;
-        top: auto;
-        right: auto;
+        top: 0;
+        right: 0;
         text-align: center;
-        margin: 10px auto;
-        background-color: transparent;
-        box-shadow: none;
-        padding: 0;
+        margin-top: 10px;
     }
 
     .mit-link a {
-        color: #009688;
-        background-color: #fff;
-        padding: 10px;
-        border: 1px solid #009688;
-        border-radius: 5px;
-    }
-
-    .mit-link a:hover {
-        background-color: #009688;
-        color: #fff;
+        align-items: center;
     }
 
     .mit-icon {
@@ -219,7 +208,7 @@ footer .social-icon {
 
     .container {
         grid-template-columns: 1fr;
-        margin-top: 150px; /* Adjusted for the fixed header and MIT link */
+        margin-top: 170px; /* Adjusted for the fixed header and MIT link */
     }
 
     .tile {
