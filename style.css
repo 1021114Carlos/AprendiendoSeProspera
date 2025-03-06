@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+.home-button {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item p {
+  color: grey;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.reading-club-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.reading-club-content .icons img {
+  width: 50px;
+  margin: 10px;
+}
