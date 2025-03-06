@@ -1,133 +1,52 @@
 body {
-    background-color: #e0f7fa;
-    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
-
-header {
-    background-color: #009688;
-    color: #fff;
+.header {
     width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
 }
-
-.title h1 {
-    margin: 0;
-    font-size: 24px;
+.header-title {
+    margin-left: 20px;
 }
-
-nav a.home-button {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-    margin-right: 40px;
-}
-
-nav a.home-button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.mit-link {
-    position: fixed;
-    top: 70px;
-    right: 10px;
-    color: #fff;
-    background-color: rgba(0, 150, 136, 0.9);
+.home-button {
+    margin-right: 20px;
+    background-color: white;
+    color: #4CAF50;
     padding: 10px;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
-    width: auto;
-    z-index: 999;
-}
-
-.mit-link a {
-    color: #fff;
+    cursor: pointer;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
-
-.mit-link a:hover {
-    text-decoration: underline;
-}
-
-.mit-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 5px;
-}
-
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
-    margin-top: 130px;
+    max-width: 1200px;
     width: 100%;
-    max-width: 800px;
-    padding: 0 20px;
+    padding: 20px;
 }
-
 .tile {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid #ccc;
-    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
-
-.tile a {
-    text-decoration: none;
-    color: #000;
-    font-size: 36px;
-}
-
-.tile#honduras a {
-    font-size: 30px;
-    padding: 0 25px;
-}
-
-.tile#book-club a {
-    white-space: nowrap;
-    font-size: 30px;
-    padding: 0 25px;
-}
-
-.tile#finance a {
-    white-space: nowrap;
-}
-
 .tile:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
 }
-
-.tile:hover a {
-    color: #fff;
-}
-
-.content, .club-message {
-    margin-top: 100px;
-    width: 80%;
-   
