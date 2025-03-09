@@ -3,32 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Club de lectura / Reading Club</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Blog</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .home-button {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-decoration: none;
+      color: #333;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .content {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+    .meet-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: #1a73e8;
+    }
+    .meet-link img {
+      height: 24px;
+      margin-right: 8px;
+    }
+    .form-container {
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        padding: 15px;
+    }
+    .form-container label, .form-container input {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .content h2 {
+        text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Aprendiendo Se Prospera</h1>
     <a href="index.html" class="home-button">Home</a>
+    <h1>Conversational English</h1>
+    <div></div>
   </header>
 
-  <div class="reading-club-content">
-    <h2>Club de lectura / Reading Club</h2>
-    <p>
-      Welcome to the Club de lectura / Reading Club.<br><br>
-      Our meetings are held every Sunday at 10:00 AM Mountain Time.<br><br>
-      The goal of our meetings is to speak and share summaries of what we are reading.<br><br>
-      Join us for an enriching experience of sharing ideas and learning.<br><br>
-      Bienvenidos al Club de lectura / Reading Club.<br><br>
-      Nos reunimos todos los domingos a las 10:00 AM hora de la montaña.<br><br>
-      El objetivo de nuestras reuniones es hablar y compartir resúmenes de lo que estamos leyendo.<br><br>
-      Únase a nosotros para una experiencia enriquecedora de intercambio de ideas y aprendizaje.
-    </p>
-    <div class="icons">
-      <a href="YOUR_GOOGLE_MEET_LINK"><img src="google_meet_icon.png" alt="Google Meet"></a>
-      <a href="https://www.instagram.com/hablandoenglishleyendobooks?utm_source=qr&igsh=MWNxaWlzNGdzajd3aw=="><img src="instagram_icon.png" alt="Instagram"></a>
+  <div class="content">
+    <h2>Hablando Ingles</h2>
+    <p>Join our weekly Conversational English Book Club! We meet every Sunday at 9:00 AM Mountain Time for one hour.</p>
+
+    <!-- Clickable Google Meet Icon -->
+    <a href="https://meet.google.com/landing?hs=197&authuser=0&pli=1" class="meet-link" target="_blank">
+      <img src="https://meet.google.com/?hs=197&authuser=0" alt="Google Meet Icon" class="meet-icon">Join Google Meet
+    </a>
+
+    <div class="form-container">
+        <h3>Interested in Attending?</h3>
+        <p>Please fill out the form below:</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="book">Book you would like to discuss:</label>
+            <input type="text" id="book" name="book"><br>
+            <button type="submit">Submit</button>
+        </form>
     </div>
   </div>
-
 </body>
 </html>
