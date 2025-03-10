@@ -1,96 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header {
-    background-color: #ddd; /* Light grey header */
-    color: black;
-    padding: 20px 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 100%;
     text-align: center;
-    width: 80%;
-    margin-top: 20px;
-    border-radius: 8px;
+}
+
+h1 {
+    font-size: 1.8em; 
+    word-wrap: break-word; 
+}
+
+nav {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: center;
-    position: relative; /* For positioning home button */
+    margin-top: 20px;
+    width: 100%;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 1.5em; /* Adjust font size as needed */
-}
-
-.home-button {
-    position: absolute;
-    left: 20px; /* Adjust position from left as needed */
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px 15px;
-    background-color: #eee; /* Slightly lighter grey for button */
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px; 
+    margin: 5px; 
     border: 1px solid #ccc;
     border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
 }
 
-.home-button:hover {
-    background-color: #ddd;
-}
-
-.container {
+.content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout - changed from 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    width: 80%;
     padding: 20px;
-    box-sizing: border-box;
-    max-width: 960px; /* Maximum width of the container */
+    width: 90%; 
+    max-width: 1200px;
 }
 
-.tile {
-    background-color: #fff;
-    padding: 30px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for pop effect */
-    min-height: 100px; /* Minimum height for tiles */
-    box-sizing: border-box; /* To include padding in height */
-    flex-direction: column; /* To stack text vertically */
-}
-
-.tile:hover {
-    transform: scale(1.05); /* Scale up on hover */
-    box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* More prominent shadow on hover */
-}
-
-.small-text {
-    font-size: 0.8em; /* Adjust size for smaller text */
-    font-weight: normal; /* Make the smaller text not bold */
-    display: block; /* Ensure each line breaks */
-}
-
-
-/* Basic styling for pages other than index */
-.page-container {
-    width: 80%;
-    margin: 20px auto;
+.content-item {
+    border: 1px solid #ccc;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; 
+    }
+
+    nav a {
+        padding: 8px 10px; 
+        margin: 3px; 
+    }
+
+    .content {
+        grid-template-columns: 1fr; 
+        width: 100%; 
+    }
 }
