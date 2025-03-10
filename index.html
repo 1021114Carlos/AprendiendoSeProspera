@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprendiendo Se Prospera</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Aprendiendo se prospera</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Aprendiendo Se Prospera</h1>
+        <h1>Aprendiendo se prospera</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
     </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Blog</a>
-        <a href="#">Book Club</a>
-        <a href="#">Club de Lectura</a>
-    </nav>
-
-    <div class="content">
-        <div class="content-item">
-            <h2>Educational Resources</h2>
-            <p>Free Educational Resources From Top Universities</p>
+    <div class="container">
+        <div class="box" onclick="navigateTo('blog.html')">
+            <h2>Blog</h2>
         </div>
-        <div class="content-item">
+        <div class="box" onclick="navigateTo('education.html')">
+            <h2>Free Educational Resources from Top Universities</h2>
+        </div>
+        <div class="box" onclick="navigateTo('honduras.html')">
             <h2>Honduras Potential Growth</h2>
-            <p>Honduras Potential Growth</p>
         </div>
-        <div class="content-item">
+        <div class="box" onclick="navigateTo('bookclub.html')">
+            <h2>Book Club</h2>
+            <h2>Club de Lectura</h2>
+        </div>
+        <div class="box" onclick="navigateTo('finance.html')">
             <h2>Finance</h2>
-            <p>Inversiones</p>
+            <h2>Inversiones</h2>
         </div>
     </div>
 </body>
