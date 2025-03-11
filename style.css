@@ -60,18 +60,15 @@ nav a {
 }
 
 .page-container {
-    max-width: 800px;
-    margin: 20px;
     text-align: center;
 }
 .centered-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 80vh; /* Ensure the centered text takes up most of the viewport height */
 }
 .centered-text p {
     font-size: 1.5em;
     line-height: 1.4;
-    white-space: pre-line;
 }
