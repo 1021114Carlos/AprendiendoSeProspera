@@ -64,11 +64,15 @@ nav a {
 }
 .centered-text {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Ensure the centered text takes up most of the viewport height */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center horizontally */
+    height: 80vh;
+    text-align: center; /* Ensure text within paragraphs is centered */
 }
+
 .centered-text p {
     font-size: 1.5em;
     line-height: 1.4;
+    margin-bottom: 10px; /* Add space between paragraphs */
 }
