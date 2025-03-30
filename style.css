@@ -1,78 +1,52 @@
 body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
-
 header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f0f0f0;
-}
-
-nav {
-    text-align: center;
-    background-color: #e0e0e0;
-    padding: 10px 0;
-}
-
-nav a {
-    text-decoration: none;
-    padding: 10px 15px;
-    color: #333;
-}
-
-.nav-item {
-    background-color: #d0d0d0;
-    border-radius: 5px;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.grid-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ddd;
-    text-decoration: none;
-    color: #333;
-    transition: transform 0.3s ease;
-}
-
-.grid-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.grid-item h2 {
-    margin-bottom: 5px;
-}
-
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-.page-container {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
 }
-.centered-text {
+main {
+    padding: 2rem;
+}
+section {
+    margin-bottom: 2rem;
+}
+.mission-statements {
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center horizontally */
-    height: 80vh;
-    text-align: center; /* Ensure text within paragraphs is centered */
+    justify-content: space-between;
+    gap: 2rem;
 }
-
-.centered-text p {
-    font-size: 1.5em;
-    line-height: 1.4;
-    margin-bottom: 10px; /* Add space between paragraphs */
+.mission {
+    flex: 1;
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.link-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+.link-container a {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
 }
