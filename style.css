@@ -7,8 +7,8 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 header {
@@ -22,7 +22,6 @@ header {
 main {
     width: 90%;
     max-width: 800px;
-    margin: 0 auto;
     text-align: center;
 }
 section {
@@ -30,7 +29,7 @@ section {
 }
 .mission-statements {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -40,6 +39,7 @@ section {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 .link-container {
     display: flex;
