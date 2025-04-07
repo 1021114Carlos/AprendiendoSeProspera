@@ -1,1 +1,18 @@
 
+h1 {
+    text-align: center;
+}
+
+.mission-statement {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.book-club {
+    text-align: center;
+    margin: 20px auto;
+    width: 60%;
+}
