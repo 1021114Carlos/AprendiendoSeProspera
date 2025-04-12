@@ -1,14 +1,10 @@
-
 h1 {
     text-align: center;
 }
 
 .mission-statement {
-    background-color: lightgray;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 0 auto;
-    width: 80%;
+    border: 1px solid black; /* Black border */
+    padding: 10px; /* Space between the text and the border */
 }
 
 .book-club {
