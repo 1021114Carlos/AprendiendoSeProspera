@@ -1,11 +1,13 @@
 h1 {
     text-align: center;
-    background-color: light blue
+    background-color: LightBlue
 }
 
 .mission-statement {
-    border: 1px solid black; /* Black border */
-    padding: 10px; /* Space between the text and the border */
+    border: 2px solid black; /* Adds a thicker black border */
+    padding: 15px; /* Adds more space inside the border */
+    margin: 10px; /* Adds space outside the element */
+    display: inline-block; /* Keeps it neatly contained */
 }
 
 .book-club {
