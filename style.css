@@ -25,6 +25,7 @@ header {
     padding: 10px;
     width: 50%;
     margin: auto; /* Centering the container */
+    border-radius: 15px; /* Rounds corners */
 }
 
 /* Split the column into two columns */
