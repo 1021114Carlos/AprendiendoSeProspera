@@ -18,3 +18,11 @@ header {
     margin: 20px auto;
     width: 60%;
 }
+
+/* Add border to the container */
+.educationl-resources {
+    border: 2px solid black; /* Solid black border */
+    padding: 10px;
+    width: 50%;
+    margin: auto; /* Centering the container */
+}
