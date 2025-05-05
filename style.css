@@ -26,3 +26,16 @@ header {
     width: 50%;
     margin: auto; /* Centering the container */
 }
+
+/* Split the column into two columns */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Add spacing between items */
+}
+
+.links a {
+    width: 50%; /* Each link takes up half the width */
+    box-sizing: border-box;
+    padding: 5px;
+}
