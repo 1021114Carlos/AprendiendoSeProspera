@@ -1,0 +1,2 @@
+# Tell the server to serve XML files as proper application/xml
+AddType application/xml .xml
