@@ -1,44 +1,108 @@
-body { background-color: Dark White
+/* Base styles */
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header */
 header {
     text-align: center;
-    background-color: #ADD8E6
+    background-color: #ADD8E6;
+    padding: 20px;
 }
 
-.mission-statement {
-    border: 2px solid black; /* Adds a thicker black border */
-    padding: 15px; /* Adds more space inside the border */
-    margin: 10px; /* Adds space outside the element */
-    display: inline-block; /* Keeps it neatly contained */
+/* Mission statements */
+.mission-statements {
+    border: 2px solid black;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
 }
 
+/* Book club section */
 .book-club {
     text-align: center;
     margin: 20px auto;
     width: 60%;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
-/* Add border to the container */
+/* Educational resources */
 .educational-resources {
-    border: 2px solid black; /* Solid black border */
-    padding: 10px;
-    width: 50%;
-    margin: auto; /* Centering the container */
-    border-radius: 15px; /* Rounds corners */
+    border: 2px solid black;
+    padding: 20px;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 15px;
+    background-color: white;
 }
 
-/* Split the column into two columns */
+/* Link grid layout */
 .links {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Add spacing between items */
+    gap: 10px;
+    justify-content: center;
 }
 
 .links a {
-    width: 50%; /* Each link takes up half the width */
+    width: 45%;
     box-sizing: border-box;
-    padding: 5px;
+    padding: 8px;
+    background-color: #f0f0f0;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #d0e7ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+/* ✅ Responsive layout for screens smaller than 768px */
+@media (max-width: 768px) {
+    .mission-statements,
+    .book-club,
+    .educational-resources {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .links a {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .book-club ul {
+        padding-left: 0;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: auto;
+    }
 }
 
 /* Social media icons */
@@ -77,3 +141,4 @@ header {
         margin-right: 10px;
     }
 }
+
