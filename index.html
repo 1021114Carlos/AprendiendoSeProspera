@@ -7,6 +7,7 @@
     <title>Aprende Inglés Gratis desde América Latina | AprendiendoEnglish.org</title>
     <meta name="description" content="Empodérate mejorando tu inglés con recursos gratuitos. Aprende inglés técnico para acceder a cursos de programación, ciencia, medicina, finanzas y más.">
     
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" href="/honduras-flag.png" type="image/png">
@@ -26,59 +27,122 @@
 </head>
 
 <body>
-  	<div class="social-icons">
-      <a href="https://www.linkedin.com/in/carlos-diaznm" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com/carlos49126/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
+    <!-- Social media icons -->
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/carlos-diaznm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/carlos49126/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://substack.com/@carlosdiazhn" target="_blank" rel="noopener noreferrer" aria-label="Substack">
+            <i class="fas fa-envelope"></i>
+        </a>
     </div>
 
-    <main>
-        <header>
-            <h1>Aprendiendo Se Prospera</h1>
-        </header>
+    <!-- Main header + navigation -->
+    <header>
+        <h1>Aprendiendo Se Prospera</h1>
+        <p class="tagline">Aprende inglés y habilidades técnicas para crear más oportunidades desde América Latina.</p>
 
-        <section class="mission-statements">
-            <h3>Mission Statement</h3>
-            <p>It is time to get unstuck and move toward a more prosperous society. There are excellent online resources offering free courses, bootcamps, and certifications. My motivation is to help people from Honduras discover and access these opportunities so they can learn new skills and knowledge, unlock their full potential, and pursue better opportunities to improve their lives and communities. Since most of these free programs are in English, the goal of this organization is to help participants gain enough English proficiency to complete these educational programs independently or with minimal assistance in a short period of time.</p>
-
-            <h3>Declaración de la misión</h3>
-            <p>Es momento de avanzar hacia una sociedad más próspera. Existen excelentes recursos en línea que ofrecen cursos, programas y certificaciones de forma gratuita. Mi motivacion es ayudar a las personas de Honduras a descubrir y acceder a estas oportunidades para que puedan adquirir nuevas habilidades y conocimientos, desarrollar su máximo potencial y buscar mejores oportunidades que mejoren sus vidas y sus comunidades. Dado que la mayoría de estos programas gratuitos están en inglés, el objetivo de esta organización es ayudar a los participantes a alcanzar un nivel de inglés suficiente para completar estos programas educativos de manera independiente o con mínima asistencia en un corto período de tiempo.</p>
-        </section>
-
-        <section class="book-club">
-            <h2>Book Club Information</h2>
-            <p><strong>Meeting Times:</strong></p>
-            <ul>
-                <li>Rules are simple: Read a book of your choice and share.</li>
-                <li>Friday: 8:00 AM to 9:00 AM Mountain Standard Time</li>
-                <li>Sunday: 2:30 PM to 3:30 PM Mountain Standard Time</li>
+        <nav aria-label="Navegación principal">
+            <ul class="nav-links">
+                <li><a href="#mission">Misión / Mission</a></li>
+                <li><a href="#book-club">Club de lectura</a></li>
+                <li><a href="#resources">Recursos educativos</a></li>
             </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Mission Statements -->
+        <section id="mission" class="mission-statements">
+            <h2>Mission Statement</h2>
             <p>
-                Join us via <span>📺</span>
-                <a href="https://meet.google.com/xyz" target="_blank">Google Meet</a>.
+                It is time to get unstuck and move toward a more prosperous society. There are excellent online resources
+                offering free courses, bootcamps, and certifications. My motivation is to help people from Honduras discover
+                and access these opportunities so they can learn new skills and knowledge, unlock their full potential, and
+                pursue better opportunities to improve their lives and communities. Since most of these free programs are in
+                English, the goal of this organization is to help participants gain enough English proficiency to complete
+                these educational programs independently or with minimal assistance in a short period of time.
             </p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdCnQ-nLNjZoJxDWnad-ABeFzjT4_UP-PEhu_YBbekM3AqCZg/viewform?embedded=true" width="640" height="776" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+            <h2>Declaración de la misión</h2>
+            <p>
+                Es momento de avanzar hacia una sociedad más próspera. Existen excelentes recursos en línea que ofrecen cursos,
+                programas y certificaciones de forma gratuita. Mi motivación es ayudar a las personas de Honduras y de toda
+                América Latina a descubrir y acceder a estas oportunidades para que puedan adquirir nuevas habilidades y
+                conocimientos, desarrollar su máximo potencial y buscar mejores oportunidades que mejoren sus vidas y sus
+                comunidades. Dado que la mayoría de estos programas gratuitos están en inglés, el objetivo de esta organización
+                es ayudar a los participantes a alcanzar un nivel de inglés suficiente para completar estos programas educativos
+                de manera independiente o con mínima asistencia en un corto período de tiempo.
+            </p>
         </section>
 
-        <section class="educational-resources">
-            <h2>Free Educational Resources</h2>
+        <!-- Book Club -->
+        <section id="book-club" class="book-club">
+            <h2>Book Club / Club de Lectura</h2>
+            <p><strong>Cómo funciona:</strong></p>
+            <ul>
+                <li>Las reglas son simples: lee un libro de tu elección y comparte un resumen breve.</li>
+                <li>Practica inglés (o español) hablando de lo que estás leyendo.</li>
+            </ul>
+
+            <p><strong>Horarios de reunión (Hora de la Montaña - MST):</strong></p>
+            <ul>
+                <li>Viernes: 8:00 AM – 9:00 AM</li>
+                <li>Domingo: 2:30 PM – 3:30 PM</li>
+            </ul>
+
+            <p>
+                Únete vía <span aria-hidden="true">📺</span>
+                <a href="https://meet.google.com/xyz" target="_blank" rel="noopener noreferrer">Google Meet</a>.
+            </p>
+
+            <p><strong>Formulario de registro:</strong></p>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdCnQ-nLNjZoJxDWnad-ABeFzjT4_UP-PEhu_YBbekM3AqCZg/viewform?embedded=true"
+                width="640"
+                height="776"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">
+                Loading…
+            </iframe>
+        </section>
+
+        <!-- Free Educational Resources -->
+        <section id="resources" class="educational-resources">
+            <h2>Free Educational Resources / Recursos Educativos Gratuitos</h2>
+            <p class="resources-intro">
+                Todos estos recursos son gratuitos y en su mayoría están en inglés. La idea es que puedas usarlos para aprender
+                programación, ciencia, matemáticas, finanzas, inglés técnico y más.
+            </p>
+
             <div class="links">
-                <a href="https://ocw.mit.edu/" target="_blank">MIT OpenCourseWare</a>
-                <a href="https://www.fast.ai/" target="_blank">Fastai</a>
-                <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>
-                <a href="https://www.edx.org/" target="_blank">edX</a>
-                <a href="https://www.coursera.org/" target="_blank">Coursera</a>
-                <a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a>
-                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+                <a href="https://ocw.mit.edu/" target="_blank" rel="noopener noreferrer">MIT OpenCourseWare</a>
+                <a href="https://www.fast.ai/" target="_blank" rel="noopener noreferrer">Fast.ai (Machine Learning)</a>
+                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp (Programación)</a>
+                <a href="https://www.edx.org/" target="_blank" rel="noopener noreferrer">edX</a>
+                <a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Coursera</a>
+                <a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Khan Academy</a>
+                <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools (Web / HTML / CSS)</a>
+                <a href="https://academy.intuit.com/programs" target="_blank" rel="noopener noreferrer">
+                    Intuit Academy (Contabilidad y Finanzas)
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        Answer to FAQ: There is no cost.
+        <p>Respuesta a la pregunta frecuente: No hay ningún costo por participar.</p>
+        <p class="footer-meta">
+            © <span id="year"></span> AprendiendoEnglish.org · Creado desde América Latina para América Latina.
+        </p>
+        <script>
+            // simple script to always show current year in the footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>
