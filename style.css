@@ -74,22 +74,6 @@ header h1 {
     margin-top: 0;
 }
 
-/* Book club section */
-/*.book-club {
-    text-align: center;
-    margin: 20px auto;
-    width: 60%;
-    background-color: #ffffff;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.book-club ul {
-    text-align: left;*/
-}
-
 /* Educational resources */
 .educational-resources {
     border: 2px solid #000;
@@ -224,7 +208,7 @@ footer {
 .book-club {
     text-align: left;
     margin: 20px auto;
-    width: 60%;
+    width: 80%;              /* was 60% – now matches mission box */
     box-sizing: border-box;
     color: #111827;
 }
@@ -237,14 +221,8 @@ footer {
     padding: 1.8rem 1.5rem;
     border-radius: 14px;
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
-}
-
-/* Form layout */
-.book-club-card h3 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
+    width: 100%;             /* ensure it fills the .book-club width */
+    box-sizing: border-box;
 }
 
 .book-club-form {
