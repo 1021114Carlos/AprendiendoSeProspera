@@ -63,7 +63,7 @@ header h1 {
 .mission-statements {
     border: 2px solid #000;
     padding: 15px;
-    margin: 20px auto;
+    margin: 40px auto 40px;  /* slightly more vertical spacing */
     width: 80%;
     border-radius: 10px;
     background-color: #ffffff;
@@ -78,7 +78,8 @@ header h1 {
 .educational-resources {
     border: 2px solid #000;
     padding: 20px;
-    width: 60%;
+    width: 80%;
+    margin: 40px auto 60px;
     margin: 30px auto;
     border-radius: 15px;
     background-color: #ffffff;
@@ -207,7 +208,7 @@ footer {
 /* Book club base container */
 .book-club {
     text-align: center;   /* NEW — centers title + paragraphs */
-    margin: 20px auto;
+    margin: 40px auto 50px;
     width: 80%;
     box-sizing: border-box;
     color: #111827;
