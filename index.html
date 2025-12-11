@@ -88,7 +88,7 @@
         <section id="book-club" class="book-club">
             <h2>Book Club / Club de Lectura</h2>
 
-            <p><strong>Cómo funciona:</strong></p>
+            <p><strong>How does it work | Cómo funciona:</strong></p>
             <ul>
                 <li>Las reglas son simples: lee un libro de tu elección y comparte un resumen breve.</li>
                 <li>Practica inglés hablando de lo que estás leyendo.</li>
@@ -99,10 +99,10 @@
                 <a href="https://meet.google.com/xyz" target="_blank" rel="noopener noreferrer">Google Meet</a>.
             </p>
 
-            <p><strong>Formulario de registro:</strong></p>
+            <p><strong>Registration Form:</strong></p>
 
             <div class="book-club-card">
-                <h3>Confirma tu participación / RSVP</h3>
+                <h3>Confirm your attendance / RSVP</h3>
 
                 <form
                     id="book-club-form"
@@ -111,16 +111,16 @@
                     action="https://docs.google.com/forms/d/e/1FAIpQLSdCnQ-nLNjZoJxDWnad-ABeFzjT4_UP-PEhu_YBbekM3AqCZg/formResponse"
                     target="bc-hidden-target"
                 >
-                    <label for="bc-name">Nombre completo</label>
+                    <label for="bc-name">Name</label>
                     <input
                         id="bc-name"
                         name="entry.1672411794"
                         type="text"
-                        placeholder="Escribe tu nombre"
+                        placeholder="Write your name"
                         required
                     />
 
-                    <label for="bc-email">Correo electrónico</label>
+                    <label for="bc-email">E-mail</label>
                     <input
                         id="bc-email"
                         name="entry.722637145"
@@ -129,7 +129,7 @@
                         required
                     />
 
-                    <label>Horarios de reunión (Mountain Standard Time)</label>
+                    <label>Meeting hours (Mountain Standard Time)</label>
                     <div class="book-club-options">
                         <label>
                             <input
@@ -138,15 +138,15 @@
                                 value="Friday 8:00 AM to 9:00 AM"
                                 required
                             />
-                            Viernes 8:00 AM – 9:00 AM
+                            Friday 8:00 AM – 9:00 AM
                         </label>
                         <label>
                             <input
                                 type="radio"
                                 name="entry.215499256"
-                                value="Sunday 2:30 PM to 3:30 PM"
+                                value="Sunday 9:30 AM to 10:30 AM"
                             />
-                            Domingo 2:30 PM – 3:30 PM
+                            Sunday 9:30 AM – 10:30 AM
                         </label>
                         <label>
                             <input
@@ -154,16 +154,16 @@
                                 name="entry.215499256"
                                 value="Both"
                             />
-                            Ambos
+                            Both
                         </label>
                     </div>
 
-                    <label for="bc-comments">Comentarios y/o preguntas (opcional)</label>
+                    <label for="bc-comments">Comments and Questions (opcional)</label>
                     <textarea
                         id="bc-comments"
                         name="entry.2606285"
                         rows="3"
-                        placeholder="Ejemplo: ¿Puedo unirme si todavía no tengo un libro?"
+                        placeholder="Ejemplo:Can i join if i don't have a book picked yet?"
                     ></textarea>
 
                     <!-- Hidden fields Google Forms needs -->
@@ -172,18 +172,18 @@
                     <input type="hidden" name="pageHistory" value="0" />
 
                     <button type="submit" class="book-club-btn">
-                        Confirmar mi asistencia
+                        Confirm Attendance
                     </button>
 
                     <p class="book-club-note">
-                        Nota: Este formulario es solo para confirmar tu interés. Te enviaré el enlace y recordatorio por correo.
+                        Nota: This form is only to confirm your interest. I will send you the link and a reminder by email.
                     </p>
                 </form>
 
                 <!-- hidden iframe + success message -->
                 <iframe name="bc-hidden-target" id="bc-hidden-target" style="display:none;"></iframe>
                 <p id="bc-success" class="book-club-success" hidden>
-                    ¡Gracias por registrarte! Te enviaré el enlace y recordatorios por correo electrónico.
+                    Thank you for registering! I will send you the link and a reminder by email.
                 </p>
             </div>
         </section>
