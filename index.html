@@ -100,7 +100,7 @@
             </p>
 
             <p><strong>Formulario de registro:</strong></p>
-            <iframe
+            <!--<iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSdCnQ-nLNjZoJxDWnad-ABeFzjT4_UP-PEhu_YBbekM3AqCZg/viewform?embedded=true"
                 width="640"
                 height="776"
@@ -108,7 +108,65 @@
                 marginheight="0"
                 marginwidth="0">
                 Loading…
-            </iframe>
+            </iframe>-->
+
+            <div class="book-club-card">
+                <h3>Confirma tu participación / RSVP</h3>
+            
+                <!-- This is now your custom form that sends data to Google Forms -->
+                <form class="book-club-form"
+                      method="POST"
+                      action="https://docs.google.com/forms/d/e/1FAIpQLSdCnQ-nLNjZoJxDWnad-ABeFzjT4_UP-PEhu_YBbekM3AqCZg/formResponse"
+                      target="_self">
+            
+                    <!-- ⚠️ In the next step you will replace NAME_ID, EMAIL_ID, DAY_ID, COMMENTS_ID -->
+            
+                    <label for="bc-name">Nombre completo</label>
+                    <input id="bc-name" name="entry.1672411794" type="text"
+                           placeholder="Escribe tu nombre" required>
+            
+                    <label for="bc-email">Correo electrónico</label>
+                    <input id="bc-email" name="entry.722637145" type="email"
+                           placeholder="tucorreo@ejemplo.com" required>
+            
+                    <label>¿Qué día(s) asistirás?</label>
+                    <div class="book-club-options">
+                        <label>
+                            <input type="radio" name="entry.2606285"
+                                   value="Friday 8:00 AM to 9:00 AM" required>
+                            Viernes 8:00 AM – 9:00 AM
+                        </label>
+                        <label>
+                            <input type="radio" name="entry.2606285"
+                                   value="Sunday 2:30 PM to 3:30 PM">
+                            Domingo 2:30 PM – 3:30 PM
+                        </label>
+                        <label>
+                            <input type="radio" name="entry.2606285"
+                                   value="Both">
+                            Ambos
+                        </label>
+                    </div>
+            
+                    <label for="bc-comments">Comentarios y/o preguntas (opcional)</label>
+                    <textarea id="bc-comments" name="entry.2606285" rows="3"
+                              placeholder="Ejemplo: ¿Puedo unirme si todavía no tengo un libro?"></textarea>
+            
+                    <!-- Hidden fields Google Forms likes to see -->
+                    <input type="hidden" name="fvv" value="1">
+                    <input type="hidden" name="draftResponse" value="[]">
+                    <input type="hidden" name="pageHistory" value="0">
+            
+                    <button type="submit" class="book-club-btn">
+                        Confirmar mi asistencia
+                    </button>
+            
+                    <p class="book-club-note">
+                        Nota: Este formulario es solo para confirmar tu interés. Te enviaré el enlace y recordatorio por correo.
+                    </p>
+                </form>
+            </div>
+
         </section>
 
         <!-- Free Educational Resources -->
