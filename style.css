@@ -206,12 +206,19 @@ footer {
 /* modifying google form*/
 /* Book club base container */
 .book-club {
-    text-align: left;
+    text-align: center;   /* NEW — centers title + paragraphs */
     margin: 20px auto;
-    width: 80%;              /* was 60% – now matches mission box */
+    width: 80%;
     box-sizing: border-box;
     color: #111827;
 }
+
+/* Keep bullet lists readable (left-align only the list items) */
+.book-club ul {
+    text-align: left;
+    display: inline-block;   /* keeps bullets centered overall */
+}
+
 
 /* Card that mimics the dark form style */
 .book-club-card {
