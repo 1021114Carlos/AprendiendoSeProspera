@@ -75,7 +75,7 @@ header h1 {
 }
 
 /* Book club section */
-.book-club {
+/*.book-club {
     text-align: center;
     margin: 20px auto;
     width: 60%;
@@ -87,7 +87,7 @@ header h1 {
 }
 
 .book-club ul {
-    text-align: left;
+    text-align: left;*/
 }
 
 /* Educational resources */
@@ -218,3 +218,126 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* modifying google form*/
+/* Book club base container */
+.book-club {
+    text-align: left;
+    margin: 20px auto;
+    width: 60%;
+    box-sizing: border-box;
+    color: #111827;
+}
+
+/* Card that mimics the dark form style */
+.book-club-card {
+    margin-top: 1rem;
+    background-color: #111827;
+    color: #e5e7eb;
+    padding: 1.8rem 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
+}
+
+/* Form layout */
+.book-club-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.book-club-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.book-club-form label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.book-club-form input[type="text"],
+.book-club-form input[type="email"],
+.book-club-form textarea {
+    width: 100%;
+    padding: 0.65rem 0.7rem;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background-color: #020617;
+    color: #f9fafb;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+}
+
+.book-club-form input::placeholder,
+.book-club-form textarea::placeholder {
+    color: #6b7280;
+}
+
+.book-club-form input:focus,
+.book-club-form textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 1px #6366f1;
+}
+
+/* Radio options */
+.book-club-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.book-club-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Button */
+.book-club-btn {
+    margin-top: 0.6rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    background: linear-gradient(90deg, #4f46e5, #6366f1);
+    color: #f9fafb;
+    text-align: center;
+    transition: transform 0.05s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.book-club-btn:hover {
+    box-shadow: 0 12px 25px rgba(79, 70, 229, 0.55);
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+.book-club-btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+/* Small note text */
+.book-club-note {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .book-club {
+        width: 95%;
+    }
+
+    .book-club-card {
+        padding: 1.4rem 1.1rem;
+    }
+}
+
