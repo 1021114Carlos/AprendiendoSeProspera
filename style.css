@@ -1,7 +1,7 @@
 /* Base styles */
 body {
     background-color: #F5F5F5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #222;
@@ -10,28 +10,34 @@ body {
 /* Layout helpers */
 main {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding: 0 1rem 2rem;
 }
+
 
 /* Header */
 header {
     text-align: center;
-    background-color: #ADD8E6;
-    padding: 20px 1rem 15px;
-    margin-bottom: 20px;
+    background: linear-gradient(135deg, #a8ddff, #7cc4ff);
+    padding: 28px 1rem 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    letter-spacing: 0.04em;
+    font-weight: 700;
 }
 
 .tagline {
-    margin: 8px 0 0;
-    font-size: 0.95rem;
-    color: #333;
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #123047;
+    font-weight: 400;
 }
+
 
 /* Simple navigation */
 .nav-links {
@@ -62,8 +68,8 @@ header h1 {
 /* Mission statements */
 .mission-statements {
     border: 2px solid #000;
-    padding: 15px;
-    margin: 40px auto 40px;  /* slightly more vertical spacing */
+    padding: 18px 20px;
+    margin: 40px auto 40px;
     width: 80%;
     border-radius: 10px;
     background-color: #ffffff;
@@ -121,16 +127,18 @@ header h1 {
 /* Footer */
 footer {
     text-align: center;
-    margin: 30px auto 0;
-    padding: 10px 1rem 20px;
+    margin: 50px auto 0;
+    padding: 18px 1rem 28px;
     color: #333;
-    font-size: 0.85em;
-    background-color: #f0f0f0;
+    font-size: 1rem;              /* bigger text */
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb; /* thin top border = card effect */
+    box-shadow: 0 -4px 18px rgba(15, 23, 42, 0.08);
 }
 
-.footer-meta {
-    margin-top: 5px;
-    color: #555;
+.footer-meta,
+footer p:first-child {
+    font-weight: 700; 
 }
 
 /* Social media icons */
@@ -143,11 +151,18 @@ footer {
 
 .social-icons a {
     color: #333;
-    font-size: 1.5rem;
-    margin-right: 15px;
+    font-size: 2rem;              
+    margin-right: 18px;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.25s ease, transform 0.15s ease, opacity 0.15s ease;
 }
+
+/* Subtle hover animation */
+.social-icons a:hover {
+    transform: translateY(-1px) scale(1.07);
+    opacity: 0.9;
+}
+
 
 .social-icons a:hover {
     color: #0077b5; /* LinkedIn hover */
@@ -161,7 +176,8 @@ footer {
     color: #ff6719; /* Substack-like orange */
 }
 
-/* ✅ Responsive layout for screens smaller than 768px */
+/*Responsive layout for screens smaller than 768px */
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.6em;
@@ -194,8 +210,8 @@ footer {
     }
 
     .social-icons a {
-        font-size: 1.3rem;
-        margin-right: 10px;
+        font-size: 1.8rem;
+        margin-right: 12px;
     }
 
     .nav-links {
@@ -207,7 +223,7 @@ footer {
 /* modifying google form*/
 /* Book club base container */
 .book-club {
-    text-align: center;   /* NEW — centers title + paragraphs */
+    text-align: center;
     margin: 40px auto 50px;
     width: 80%;
     box-sizing: border-box;
