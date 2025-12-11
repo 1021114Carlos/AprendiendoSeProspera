@@ -230,6 +230,7 @@ footer {
     box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
     width: 100%;             /* ensure it fills the .book-club width */
     box-sizing: border-box;
+    text-align: left;
 }
 
 .book-club-form {
