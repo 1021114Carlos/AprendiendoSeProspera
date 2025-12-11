@@ -114,10 +114,12 @@
                 <h3>Confirma tu participación / RSVP</h3>
             
                 <!-- This is now your custom form that sends data to Google Forms -->
-                <form class="book-club-form"
-                      method="POST"
-                      action="https://docs.google.com/forms/d/e/1FAIpQLSdCnQ-nLNjZoJxDWnad-ABeFzjT4_UP-PEhu_YBbekM3AqCZg/formResponse"
-                      target="_self">
+                <form id="book-club-form"
+                    class="book-club-form"
+                    method="POST"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdCnQ-nLNjZoJxDWnad-ABeFzjT4_UP-PEhu_YBbekM3AqCZg/formResponse"
+                    target="bc-hidden-target">
+
             
                     <!-- ⚠️ In the next step you will replace NAME_ID, EMAIL_ID, DAY_ID, COMMENTS_ID -->
             
@@ -165,6 +167,16 @@
                         Nota: Este formulario es solo para confirmar tu interés. Te enviaré el enlace y recordatorio por correo.
                     </p>
                 </form>
+                
+                <!-- Hidden iframe to capture Google Forms response -->
+                <iframe name="bc-hidden-target" id="bc-hidden-target" style="display:none;"></iframe>
+                
+                <!-- Success message (starts hidden) -->
+                <p id="bc-success" class="book-club-success" hidden>
+                    Gracias por registrarte! Te enviaré el enlace y recordatorios por correo electrónico.
+                    Thank you for registering! I will send you the link via email.
+                </p>
+
             </div>
 
         </section>
@@ -196,11 +208,27 @@
     <footer>
         <p>Respuesta a la pregunta frecuente: No hay ningún costo por participar.</p>
         <p class="footer-meta">
-            © <span id="year"></span> AprendiendoEnglish.org · Creado desde América Latina para América Latina.
+            © <span id="year"></span> AprendiendoEnglish.org · Creado para América Latina.
         </p>
         <script>
             // simple script to always show current year in the footer
             document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+        <script>
+            // Show a thank-you message after the form is submitted
+            (function () {
+                const iframe = document.getElementById('bc-hidden-target');
+                const success = document.getElementById('bc-success');
+                const form = document.getElementById('book-club-form');
+        
+                if (!iframe || !success || !form) return;
+        
+                iframe.addEventListener('load', function () {
+                    // Form submission finished
+                    success.hidden = false;
+                    form.reset();
+                });
+            })();
         </script>
     </footer>
 </body>
