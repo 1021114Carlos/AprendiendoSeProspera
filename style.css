@@ -64,8 +64,38 @@ header h1 {
     border-bottom: 2px solid #001f2b;
 }
 
+/* ===== Mission Two Separate Blocks ===== */
+
+.mission-wrapper {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.mission-block {
+    flex: 1;
+    background-color: #111827;
+    color: #e5e7eb;
+    border: 1px solid #1f2937;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
+}
+
+.mission-block h2 {
+    margin-top: 0;
+    color: #f9fafb;
+}
+
+.mission-block p {
+    line-height: 1.65;
+}
+
+
 /* Mission statements (dark card) */
-.mission-statements {
+/*.mission-statements {
     background-color: #111827;
     color: #e5e7eb;
     border: 1px solid #1f2937;
@@ -80,7 +110,7 @@ header h1 {
 .mission-statements h2 {
     margin-top: 0;
     color: #f9fafb;
-}
+}*/
 
 /* Book club base container */
 .book-club {
@@ -317,10 +347,18 @@ footer p:first-child {
 }
 
 /* Responsive layout for screens smaller than 768px */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     header h1 {
         font-size: 1.6rem;
+    }*/
+    
+@media (max-width: 768px) {
+    .mission-wrapper {
+        flex-direction: column;
+        width: 95%;
     }
+}
+
 
     .mission-statements,
     .book-club,
