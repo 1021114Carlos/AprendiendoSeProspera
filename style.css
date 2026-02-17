@@ -300,20 +300,32 @@ footer p:first-child {
 }
 
 /* Social media icons */
-.social-icons {
-    position: absolute;
-    top: 15px;
-    left: 20px;
-    z-index: 1000;
+/* ===== Social icons: stacked left ===== */
+
+.social-icons{
+    position: fixed;          /* stays visible as you scroll */
+    top: 18px;
+    left: 18px;
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;   /* stacked */
+    gap: 12px;
 }
 
-.social-icons a {
-    color: #333;
-    font-size: 2rem;
-    margin-right: 18px;
+.social-icons a{
+    color: #0b1220;
+    font-size: 1.9rem;
     text-decoration: none;
-    transition: color 0.25s ease, transform 0.15s ease, opacity 0.15s ease;
+    transition: transform 0.15s ease, opacity 0.15s ease, color 0.25s ease;
+    opacity: 0.95;
 }
+
+.social-icons a:hover{
+    transform: translateY(-1px) scale(1.06);
+    opacity: 1;
+}
+
 
 /* Hover animation + per-icon colors */
 .social-icons a:hover {
@@ -335,9 +347,17 @@ footer p:first-child {
 
 /* Responsive layout for screens smaller than 768px */
 @media (max-width: 768px) {
-
     header h1 {
         font-size: 1.6rem;
+    .hero,
+    .hero-overlay{
+    min-height: 240px;
+}
+
+.site-header h1{
+    font-size: 1.6rem;
+}
+
     }
 
     .mission-wrapper {
