@@ -37,7 +37,7 @@ main {
   height: 100%;
 
   object-fit: cover;
-  object-position: center top; /* heads always prioritized */
+  object-position: center 25%; /* heads always prioritized */
   z-index: 0;
 }
 
