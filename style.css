@@ -26,7 +26,7 @@ main {
 
   background-image: url("header-hero.png");
   background-size: cover;
-  background-position: center 45%;   /* <-- LOWER anchor */
+  background-position: center 55%;   /* <-- LOWER anchor */
   background-repeat: no-repeat;
   background-attachment: fixed;
 
