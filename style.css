@@ -146,6 +146,8 @@ main {
 }
 /* ===== Rustic Dark Glass Mission Blocks ===== */
 
+/* ===== Warm Rustic Wood-Tone Glass ===== */
+
 .mission-block{
   position: relative;
   flex: 1;
@@ -156,15 +158,16 @@ main {
   padding: 22px 26px;
   border-radius: 18px;
 
-  /* Dark tinted glass base */
-  background: rgba(15, 23, 42, 0.78);
+  /* Warm smoked wood tone */
+  background: rgba(55, 38, 28, 0.82); /* deep walnut brown */
+
   border: 1px solid rgba(255, 255, 255, 0.08);
 
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 
   box-shadow:
-    0 20px 50px rgba(2, 6, 23, 0.45),
+    0 22px 55px rgba(25, 16, 10, 0.45),
     inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
@@ -175,13 +178,23 @@ main {
   border-radius: 18px;
   pointer-events: none;
 
-  /* subtle rustic noise texture */
+  /* soft wood grain illusion */
   background-image:
-    radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
+    linear-gradient(
+      120deg,
+      rgba(255,255,255,0.04) 0%,
+      rgba(0,0,0,0.04) 50%,
+      rgba(255,255,255,0.03) 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,0,0,0.02) 0px,
+      rgba(0,0,0,0.02) 2px,
+      transparent 2px,
+      transparent 6px
+    );
 
-  background-size: 4px 4px, 6px 6px;
-  opacity: 0.4;
+  opacity: 0.45;
 }
 
 .mission-block::before {
@@ -215,14 +228,14 @@ main {
   margin: 0 0 10px 0;
   font-size: 1.15rem;
   font-weight: 700;
-  color: #f9fafb;
+  color: #f5f3f0;
 }
 
 .mission-block p{
   margin: 0;
   font-size: 0.96rem;
   line-height: 1.6;
-  color: #e5e7eb;
+  color: #e7e3de;
 }
 
 /* =========================
