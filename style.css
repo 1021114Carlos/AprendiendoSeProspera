@@ -22,13 +22,13 @@ main {
 .site-header {
   position: relative;
   width: 100%;
-  min-height: clamp(320px, 45vh, 560px);
+  min-height: clamp(340px, 55vh, 620px);
 
   background-image: url("header-hero.png");
   background-size: cover;
-  background-position: center top;     /* keep heads visible */
+  background-position: center 45%;   /* <-- LOWER anchor */
   background-repeat: no-repeat;
-  background-attachment: fixed;        /* parallax effect */
+  background-attachment: fixed;
 
   display: flex;
   align-items: center;
